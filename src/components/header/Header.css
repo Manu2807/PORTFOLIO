@@ -2,8 +2,8 @@
 
 .header {
   display: block;
-  max-width: 90%;
-  padding: 20px 10px;
+  max-width: 100%;
+  padding: 10px 5.4%;
   margin: 0px auto;
 }
 
@@ -21,13 +21,13 @@
 .header li a {
   display: block;
   padding: 20px 20px;
-  /* color: black; */
+  color: white;
   text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  /* background-color: #A6E1FA; */
+  background-color: #a6e1fa;
 }
 
 .header .logo {
@@ -62,7 +62,7 @@
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  float: right;
+  /* float: right; */
   padding: 28px 20px;
   position: relative;
   user-select: none;

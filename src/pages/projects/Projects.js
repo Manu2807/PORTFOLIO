@@ -6,7 +6,11 @@ import PublicationCard from "../../components/publicationsCard/PublicationCard";
 import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
-import { greeting, projectsHeader, publicationsHeader } from "../../portfolio.js";
+import {
+  greeting,
+  projectsHeader,
+  publicationsHeader,
+} from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
 import PublicationData from "../../shared/opensource/publications.json";
 import "./Projects.css";
@@ -17,7 +21,9 @@ class Projects extends Component {
     const theme = this.props.theme;
     return (
       <div className="projects-main">
-        <Header theme={theme} />
+        {window.location.href === "http://localhost:3000/#/projects" && (
+          <Header theme={theme} />
+        )}
         <div className="basic-projects">
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
@@ -86,8 +92,10 @@ class Projects extends Component {
             return <PublicationCard repo={repo} theme={theme} />;
           })}
         </div>
-
-        <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
+        {window.location.href === "http://localhost:3000/#/projects" && (
+          <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
+        )}
+        {/* */}
         <TopButton theme={this.props.theme} />
       </div>
     );

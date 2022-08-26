@@ -46,6 +46,22 @@ export const yelGreenTheme = {
   jacketColor: "#007f5f",
   headerColor: "#55a63077",
 };
+export const BlackGreyTheme = {
+  body: "black",
+
+  text: "#e34f26",
+  // highlight: "rgb(196, 198, 199)",
+  highlight: "white",
+  dark: "grey",
+  secondaryText: "rgb(224, 219, 219)",
+  // imageHighlight: "#17a0b3",
+  imageHighlight: "#e34f26",
+  compImgHighlight: "white",
+  jacketColor: "(151, 191, 214)",
+  // headerColor: "rgb(63, 63, 63)",
+  // headerColor: "rgb(243, 206, 192)",
+  headerColor: "white",
+};
 
 export const redTheme = {
   body: "#FFF8E6",
@@ -119,4 +135,4 @@ export const orangeTheme = {
   headerColor: "#FF6B3577",
 };
 
-export const chosenTheme = blueTheme;
+export const chosenTheme = BlackGreyTheme;

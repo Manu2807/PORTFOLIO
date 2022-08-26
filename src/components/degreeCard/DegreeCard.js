@@ -13,9 +13,11 @@ class DegreeCard extends Component {
             <div className="card-img">
               <img
                 style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
+                  width: "150px",
+                  Height: "100%",
                   transform: "scale(0.9)",
+                  objectFit: "cover",
+                  borderRadius: "50%",
                 }}
                 src={require(`../../assests/images/${degree.logo_path}`)}
                 alt={degree.alt_name}

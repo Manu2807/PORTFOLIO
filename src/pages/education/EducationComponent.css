@@ -1,5 +1,6 @@
 .education-main {
   width: 100%;
+  margin-bottom: 180px;
 }
 
 .basic-education {
@@ -13,6 +14,9 @@
 
 .heading-div > * {
   flex: 1;
+}
+.degree-card {
+  box-shadow: 0px;
 }
 
 .heading-img-div {

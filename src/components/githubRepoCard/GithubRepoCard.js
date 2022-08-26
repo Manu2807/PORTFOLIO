@@ -10,9 +10,13 @@ export default function GithubRepoCard({ repo, theme }) {
   }
 
   return (
-    <div className="repo-card-div" style={{ backgroundColor: theme.highlight }}>
+    <div
+      className="repo-card-div"
+      onClick={() => openRepoinNewTab(repo.netlify)}
+      style={{ backgroundColor: theme.highlight }}
+    >
       <Fade bottom duration={2000} distance="40px">
-        <div key={repo.id} onClick={() => openRepoinNewTab(repo.url)}>
+        <div key={repo.id}>
           <div className="repo-name-div">
             <svg
               aria-hidden="true"
@@ -31,16 +35,44 @@ export default function GithubRepoCard({ repo, theme }) {
               {repo.name}
             </p>
           </div>
+          <img
+            style={{
+              width: "90%",
+              Height: "100%",
+              transform: "scale(0.9)",
+              objectFit: "cover",
+              borderRadius: "10px",
+              margin: "15px 0px",
+            }}
+            src={require(`../../assests/images/${repo.ss}`)}
+          ></img>
+
           <p className="repo-description" style={{ color: theme.text }}>
+            <span style={{ fontSize: "20px", fontWeight: "600" }}>
+              About :{" "}
+            </span>{" "}
             {repo.description}
           </p>
+          <p className="repo-description" style={{ color: theme.text }}>
+            <span style={{ fontSize: "20px", fontWeight: "600" }}>
+              Features :{" "}
+            </span>
+            {repo.Features}
+          </p>
           <div className="repo-details">
-            <p
+            {/* <p
               className="repo-creation-date subTitle"
               style={{ color: theme.secondaryText }}
             >
               Created on {repo.createdAt.split("T")[0]}
-            </p>
+            </p> */}
+            <div
+              className="githubButt"
+              onClick={() => openRepoinNewTab(repo.url)}
+            >
+              {" "}
+              View On Github
+            </div>
             <ProjectLanguages
               className="repo-languages"
               logos={repo.languages}

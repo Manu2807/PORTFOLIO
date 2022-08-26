@@ -15,7 +15,9 @@ class Education extends Component {
     const theme = this.props.theme;
     return (
       <div className="education-main">
-        <Header theme={this.props.theme} />
+        {window.location.href === "http://localhost:3000/#/education" && (
+          <Header theme={theme} />
+        )}
         <div className="basic-education">
           <Fade bottom duration={2000} distance="40px">
             <div className="heading-div">
@@ -38,9 +40,12 @@ class Education extends Component {
             </div>
           </Fade>
           <Educations theme={this.props.theme} />
-          <Certifications theme={this.props.theme} />
+          {/* <Certifications theme={this.props.theme} /> */}
         </div>
-        <Footer theme={this.props.theme} />
+        {window.location.href === "http://localhost:3000/#/education" && (
+          <Footer theme={this.props.theme} />
+        )}
+
         <TopButton theme={this.props.theme} />
       </div>
     );
