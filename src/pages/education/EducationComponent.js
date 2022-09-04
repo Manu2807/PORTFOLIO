@@ -15,7 +15,8 @@ class Education extends Component {
     const theme = this.props.theme;
     return (
       <div className="education-main">
-        {window.location.href === "http://localhost:3000/#/education" && (
+        {window.location.href ===
+          "https://manuPortfolio.netlify.app/#/education" && (
           <Header theme={theme} />
         )}
         <div className="basic-education">
@@ -42,7 +43,8 @@ class Education extends Component {
           <Educations theme={this.props.theme} />
           {/* <Certifications theme={this.props.theme} /> */}
         </div>
-        {window.location.href === "http://localhost:3000/#/education" && (
+        {window.location.href ===
+          "https://manuPortfolio.netlify.app/#/education" && (
           <Footer theme={this.props.theme} />
         )}
 

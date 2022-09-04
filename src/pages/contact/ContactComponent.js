@@ -21,7 +21,8 @@ class Contact extends Component {
     return (
       <div className="contact-main">
         {/* <Header theme={theme} /> */}
-        {window.location.href === "http://localhost:3000/#/contact" && (
+        {window.location.href ===
+          "https://manuPortfolio.netlify.app/#/contact" && (
           <Header theme={theme} />
         )}
         <div className="basic-contact">
@@ -120,7 +121,8 @@ class Contact extends Component {
             </div>
           </Fade>
         </div>
-        {window.location.href === "http://localhost:3000/#/contact" && (
+        {window.location.href ===
+          "https://manuPortfolio.netlify.app/#/contact" && (
           <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         )}
 

@@ -21,7 +21,8 @@ class Projects extends Component {
     const theme = this.props.theme;
     return (
       <div className="projects-main">
-        {window.location.href === "http://localhost:3000/#/projects" && (
+        {window.location.href ===
+          "https://manuPortfolio.netlify.app/#/projects" && (
           <Header theme={theme} />
         )}
         <div className="basic-projects">
@@ -92,7 +93,8 @@ class Projects extends Component {
             return <PublicationCard repo={repo} theme={theme} />;
           })}
         </div>
-        {window.location.href === "http://localhost:3000/#/projects" && (
+        {window.location.href ===
+          "https://manuPortfolio.netlify.app/#/projects" && (
           <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         )}
         {/* */}
