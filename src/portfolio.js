@@ -25,8 +25,8 @@ const greeting = {
   subTitle:
     "I'm a Full Stack Web Developer with hands-on experience in designing, developing, and maintaining projects. Adept at learning, unlearning, and relearning. Demonstrate the capability of managing clean, elegant, and efficient code. Highly skilled in collaboration, decision-making, and Data Structures & Algorithms.",
   resumeLink:
-    "https://drive.google.com/open?id=1XYpYhLeqCdyx_q6l0bQoC7RgwQjAjXPf",
-  portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
+    "https://drive.google.com/file/d/1eCrfLSL4nyxO4bQF4WM10YuXemtWshBC/view?usp=sharing",
+  portfolio_repository: "https://github.com/Manu2807/PORTFOLIO",
   githubProfile: "https://github.com/Manu2807",
 };
 
